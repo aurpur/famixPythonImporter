@@ -1,11 +1,11 @@
 Class {
-	#name : #BaselineOfFamixPython,
+	#name : #BaselineOfFamixPythonImporter,
 	#superclass : #BaselineOf,
-	#category : #BaselineOfFamixPython
+	#category : #BaselineOfFamixPythonImporter
 }
 
 { #category : #accessing }
-BaselineOfFamixPython >> baseline: spec [
+BaselineOfFamixPythonImporter >> baseline: spec [
 	<baseline>
 	spec
 		package: 'Famix-Python-Entities';
