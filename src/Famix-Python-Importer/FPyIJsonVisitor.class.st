@@ -67,13 +67,18 @@ FPyIJsonVisitor >> visitAssign: aJsonNode [
 { #category : #visiting }
 FPyIJsonVisitor >> visitCall: aJsonNode [
 
-	| func function |
+	| func call function |
 	self flag: #TODO.
 
-	func := self visitJsonElement: (aJsonNode at: #func).
+	call := aJsonNode at: #func.
+	
+	func := call.
+	call at: #func ifPresent: [ func := call at: #func. ].
+	
+	
 
 	function := self newEntity: FamixPythonFunction.
-	function name:  (func name).
+	function name:  (func at: #id).
 	
 	"Add arguments in function"
 	
