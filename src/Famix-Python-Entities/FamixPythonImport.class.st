@@ -6,7 +6,8 @@ Class {
 	#instVars : [
 		'#asName => FMProperty',
 		'#entityName => FMProperty',
-		'#fromName => FMProperty'
+		'#fromName => FMProperty',
+		'#manualImportingEntity'
 	],
 	#category : #'Famix-Python-Entities-Entities'
 }
@@ -66,4 +67,10 @@ FamixPythonImport >> fromName [
 FamixPythonImport >> fromName: anObject [
 	<generated>
 	fromName := anObject
+]
+
+{ #category : #accessing }
+FamixPythonImport >> manualImportingEntity: anObject [
+
+	manualImportingEntity := anObject
 ]
