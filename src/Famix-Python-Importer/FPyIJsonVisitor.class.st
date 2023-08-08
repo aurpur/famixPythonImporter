@@ -56,8 +56,7 @@ FPyIJsonVisitor >> visitAlias: anAliasNode [
 
 { #category : #visiting }
 FPyIJsonVisitor >> visitAssign: aJsonNode [
-
-	self flag: #TODO. "Pas necessaire dans Famix"
+	"Pas necessaire dans Famix"
 	"Gerer les varialbes"
 
 	"Gerer les calls"
