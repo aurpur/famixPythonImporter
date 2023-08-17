@@ -1,8 +1,8 @@
 Class {
 	#name : #FamixPythonModule,
 	#superclass : #FamixPythonContainerEntity,
-	#traits : 'FamixTImportable + FamixTPackageable + FamixTWithComments',
-	#classTraits : 'FamixTImportable classTrait + FamixTPackageable classTrait + FamixTWithComments classTrait',
+	#traits : 'FamixTImportable + FamixTPackageable + FamixTWithComments + FamixTWithFunctions',
+	#classTraits : 'FamixTImportable classTrait + FamixTPackageable classTrait + FamixTWithComments classTrait + FamixTWithFunctions classTrait',
 	#instVars : [
 		'#manualImports'
 	],

@@ -59,6 +59,20 @@ FamixPythonTEntityCreator >> newComment [
 ]
 
 { #category : #'entity creation' }
+FamixPythonTEntityCreator >> newFunction [
+
+	<generated>
+	^ self add: FamixPythonFunction new
+]
+
+{ #category : #'entity creation' }
+FamixPythonTEntityCreator >> newFunctionNamed: aName [
+
+	<generated>
+	^ self add: (FamixPythonFunction named: aName)
+]
+
+{ #category : #'entity creation' }
 FamixPythonTEntityCreator >> newImplicitVariable [
 
 	<generated>

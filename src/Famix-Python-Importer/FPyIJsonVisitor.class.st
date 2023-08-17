@@ -57,41 +57,6 @@ FPyIJsonVisitor >> visitAlias: anAliasNode [
 { #category : #visiting }
 FPyIJsonVisitor >> visitAssign: aJsonNode [
 
-	self flag: #TODO. "Pas necessaire dans Famix"
-	"Gerer les varialbes"
-
-	"Gerer les calls"
-	^ self visitJsonElement: (aJsonNode at: #value)
-]
-
-{ #category : #visiting }
-FPyIJsonVisitor >> visitCall: aJsonNode [
-
-	| func call function |
-	self flag: #TODO.
-
-	call := aJsonNode at: #func.
-	
-	func := call.
-	call at: #func ifPresent: [ func := call at: #func. ].
-	
-	
-
-	function := self newEntity: FamixPythonFunction.
-	function name:  (func at: #id).
-	
-	"Add arguments in function"
-	
-	^function.
-
-	
-	
-	
-]
-
-{ #category : #visiting }
-FPyIJsonVisitor >> visitConstant: aJsonNode [
-
 	self flag: #TODO "Pas necessaire dans Famix"
 ]
 
@@ -168,10 +133,4 @@ FPyIJsonVisitor >> visitModule: aJsonNode [
 
 	self visitJsonElement: (aJsonNode at: #body).
 	^ module
-]
-
-{ #category : #visiting }
-FPyIJsonVisitor >> visitName: aJsonNode [
-
-	^ self visitJsonElement: (aJsonNode at: #id).
 ]

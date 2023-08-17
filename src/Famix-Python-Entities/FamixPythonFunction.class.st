@@ -12,13 +12,5 @@ FamixPythonFunction class >> annotation [
 	<FMClass: #Function super: #FamixPythonContainerEntity>
 	<package: #'Famix-Python-Entities'>
 	<generated>
-	<abstract>
 	^ self
-]
-
-{ #category : #testing }
-FamixPythonFunction class >> isAbstract [
-
-	<generated>
-	^ self == FamixPythonFunction
 ]
