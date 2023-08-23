@@ -94,6 +94,13 @@ FamixPythonTEntityCreator >> newImport [
 ]
 
 { #category : #'entity creation' }
+FamixPythonTEntityCreator >> newIndexedFileAnchor [
+
+	<generated>
+	^ self add: FamixPythonIndexedFileAnchor new
+]
+
+{ #category : #'entity creation' }
 FamixPythonTEntityCreator >> newInheritance [
 
 	<generated>

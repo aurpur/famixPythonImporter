@@ -1,8 +1,8 @@
 Class {
 	#name : #FamixPythonMethod,
 	#superclass : #FamixPythonContainerEntity,
-	#traits : 'FamixTImportable + FamixTMethod + FamixTWithComments',
-	#classTraits : 'FamixTImportable classTrait + FamixTMethod classTrait + FamixTWithComments classTrait',
+	#traits : 'FamixTImportable + FamixTInvocable + FamixTMethod + FamixTWithComments + FamixTWithInvocations',
+	#classTraits : 'FamixTImportable classTrait + FamixTInvocable classTrait + FamixTMethod classTrait + FamixTWithComments classTrait + FamixTWithInvocations classTrait',
 	#category : #'Famix-Python-Entities-Entities'
 }
 
