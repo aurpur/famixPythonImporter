@@ -18,3 +18,8 @@ FamixPythonModel class >> annotation [
 	<package: #'Famix-Python-Entities'>
 	<generated>
 ]
+
+{ #category : #visiting }
+FamixPythonModel >> accept: aVisitor [
+	^aVisitor visitFamixPythonModel: self
+]
